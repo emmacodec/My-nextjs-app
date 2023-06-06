@@ -1,5 +1,8 @@
 import styles from '../styles/global.css';
-import { Children } from 'react';
+import HomePage from './page';
+
+import Nav from '@components/nav';
+import Provider from '@components/Provider';
 
 export const metadata = {
     title: "AI-photo-graphics",
@@ -10,11 +13,14 @@ const RootLayout = ({Children}) => {
   return (
     <html lang='en'>
      <body>
+       <Nav />
+        <HomePage />
         <div className='main'>
           <div className='gradient' />
         </div>
 
         <main className='app'>
+         
             {Children}
         </main>
      </body>

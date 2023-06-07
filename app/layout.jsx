@@ -5,7 +5,7 @@ import Nav from '@components/nav';
 import Provider from '@components/Provider';
 
 export const metadata = {
-    title: "AI-photo-graphics",
+    title: "AI-Graphics",
     description: "Discover & share AI graphics"
 }
 
@@ -14,6 +14,7 @@ const RootLayout = ({Children}) => {
     <html lang='en'>
      <body>
        <Nav />
+       <Provider>
         <HomePage />
         <div className='main'>
           <div className='gradient' />
@@ -23,6 +24,7 @@ const RootLayout = ({Children}) => {
          
             {Children}
         </main>
+        </Provider>
      </body>
     </html>
   );

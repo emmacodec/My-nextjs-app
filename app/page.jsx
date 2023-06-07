@@ -9,12 +9,13 @@ const HomePage = () => {
         <span className="orange_gradient text-center">
           AI Powered Graphics(prompts)
           </span>
-      </h1>
-      <p className="desc text-center">
+          </h1>
+          <p className="desc text-center">
         AI-photo graphics is an open source AI graphics(prompts) 
         tool for modern world to discover, 
         create and share creative graphics(prompts).
       </p>
+      
 
       <Feed />
     </section>
